@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body class="fondo_formu">
+   <br>
+   <br>
+<div class="formulario">
+    
+<form class="letras_fomrulario" method="get" action="Pagina_web.html">
+        <h2 >Registro</h2>
+        <p>Nombre/nametag : <input type="text" name="textnombre" size="20%" required></p>
+        <p>Contraseña : <input type="password" name="contraseña" size="18%" required></p> 
+        <p>Email : <input type="email" name="txemail" size="32%" required></p>
+        <p>Numero de télefono : <input type="number" name="numero" size="" required></p>
+        <p>Fecha de nacimiento : <input type="date" name="txtfecha" required></p>
+        <p>Ingrese su foto de perfil : <input type="file" name="fotoperfil"></p>
+        <p>Escoge el color que mas te gusta : <input type="color" name="txtcolor"></p> 
+        <p>Armas principales, elije el que te llame la atención
+        <br>
+            Vandal  <input type="checkbox" name="gustos">
+            Phantom  <input type="checkbox" name="gustos">   
+        </p>
+        <p>Pais:  
+<select name="Pais" required> 
+    <option value="">Selecciona tu país</option>
+    <option value="AR">Argentina</option>
+    <option value="BR">Brasil</option>
+    <option value="CL">Chile</option>
+    <option value="CO">Colombia</option>
+    <option value="MX">México</option>
+    <option value="PE">Perú</option>
+    <option value="US">Estados Unidos</option>
+    <option value="CA">Canadá</option>
+    <option value="KR">Corea del Sur</option>
+    <option value="JP">Japón</option>
+    <option value="CN">China</option>
+    <option value="TW">Taiwán</option>
+    <option value="SG">Singapur</option>
+    <option value="PH">Filipinas</option>
+    <option value="TH">Tailandia</option>
+    <option value="VN">Vietnam</option>
+    <option value="TR">Turquía</option>
+    <option value="EUW">Europa Oeste</option>
+    <option value="EUNE">Europa Nórdica y Este</option>
+    <option value="OCE">Oceanía</option>
+    <option value="RU">Rusia</option>
+    <option value="LAN">Latinoamérica Norte</option>
+    <option value="LAS">Latinoamérica Sur</option>
+</select>
+<br>
+Sexo:</p>
+<input type="radio" name="Sexo" id="m" value="m"  required>
+<label for="m">Masculino</label>
+
+<input type="radio" name="Sexo" id="f" value="f" required>
+<label for="f">Femenino</label>
+
+<input type="radio" name="Sexo" id="pr" value="p" required>
+<label for="pr">Prefiero no contestar</label>
+<p>
+    <p>Deje sus observaciones</p>
+    <textarea name="comentarios" aria-setsize="200"></textarea>
+    <p>
+    <input type="submit" value="Enviar">
+    <input type="reset" value="Borrar">
+    </p>
+    </form>
+</div>
+<aside style="
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 250px;
+    background-color: #000000;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    font-family: 'Mark Pro', Arial, sans-serif;
+    font-size: 14px;
+    text-align: center;">
+    <h3 style="margin-bottom: 10px; font-size: 16px;">Recuerda</h3>
+    <p>Si subes foto que sea lejible y en HD, el color es opcional y la preferencia de vandal o phantom tambien.</p>
+</aside>
+<button class="btn-volver" onclick="window.history.back();">Volver</button>
+
+</body>
+</html>
